@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img name="slide" width="30%" height="30%">
+    </div>
+    <script>
+        var i = 0;
+        var images = Array();
+        images[0] = 'download.jpeg';
+        images[1] = 'download1.jpg'
+        images[2] = 'download3.jpg'
+        images[3] = 'download2.jpg'
+        images[4] = 'download4.jpg'
+
+        function changeImage(){
+            document.slide.src = images[i];
+            if(i < images.length - 1){
+                i++;
+            }
+            else{
+                i = 0;
+
+            }
+            setTimeout("changeImage()",2000);
+        }
+        changeImage();
+
+    </script>
+</body>
+</html>

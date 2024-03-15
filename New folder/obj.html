@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        // let employee={
+        //     name:"Aasutosh",
+        //     age:34,
+        //     salary:40000,
+        //     eid:12345,
+            //  abc(){
+            //     console.log(employee.name,"bearing Roll no:"+employee.age+"has salary: "+employee.salary);
+
+            // }
+        //     intro:function(){
+        //         console.log(`${employee.name} `)
+        //     }
+        // }
+        // console.log(employee.age);
+        // console.log(employee);
+        // console.log(employee.abc());
+
+    //    let employee=new employee();
+    //    employee.name="Aasutosh";
+    //         employee.age=34;
+    //         employee.salary=40000;
+    //         employee.eid=12345;
+
+
+    //object.create.method
+
+    // let stuprototype={}
+
+    // let student=Object.create(stuprototype);
+    // student.name="xyz";
+    // student.marks=40;
+    // student.roll=34;
+    // console.log(student["name"]);
+    // console.log(student.roll);
+    // console.log(student.marks);
+
+    function stu(name,roll,marks){
+        this.marks=marks;
+        this.roll=roll;
+        this.name=name;
+    }
+    let student=new stu("bc",12,45);
+    console.log(student.name);
+    let student1=new stu("xyz",34,67);
+    console.log(student1.name);
+    console.log(student1.roll);
+
+    </script>
+</body>
+</html>

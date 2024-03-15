@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble the Event</title>
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+    <form onclick="hello()" id="form" style="border: 12px solid black; margin: 20px;height: 300px; width: 300px; ">
+        <div onclick="wow()" id="div1" style="border: 10px solid black; margin: 45px; height: 200px; width: 200px;">
+            <p onclick="sat()" id="para" style="border: 9px solid black;margin: 40px;height: 100px; width:100px ; "></p>
+        </div>
+    </form>
+</div>
+
+
+    <script>
+        let form=document.getElementById('form');
+        let div=document.getElementById('div1');
+        let parag=document.getElementById('para');
+
+        form.addEventListener('click',abc);
+        div.addEventListener('click',dip);
+        parag.addEventListener('click',one);
+
+        function abc(){
+            form.style.border='12px solid red';
+            form.style.transform= 'rotate(360deg)';
+            form.style.transition='2s'
+        
+           
+           
+
+        }
+        function dip(){
+            div.style.border=' 10px solid green';
+            div.style.transform= 'rotate(360deg)';
+            div.style.transition='2s';
+            
+            
+        }
+        function one(){
+            parag.style.border=' 8px solid blue';
+            parag.style.transform= 'rotate(360deg)';
+            parag.style.transition='2s';
+            
+        }
+
+        
+    </script>
+</body>
+</html>

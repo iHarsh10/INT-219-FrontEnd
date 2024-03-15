@@ -1,0 +1,22 @@
+h1{
+    
+    margin-left:700px;
+    
+}
+table{
+    width: 50%;
+    height: 50%;
+    margin-left: 400px;
+    
+}
+thead{
+    background-color: aqua;
+}
+tbody{
+    background-color: bisque;
+    
+}
+ol.li{
+    font-weight:bolder;
+}
+

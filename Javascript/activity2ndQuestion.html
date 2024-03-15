@@ -1,0 +1,53 @@
+<!--nexxt friday ca 15 mcq 3 code ques-->
+<!DOCTYPE html>
+<head>
+    <style>
+        *{
+            background-color: beige;
+        }
+        div{
+            text-align: center;
+            border: solid brown 3px;
+            /* border-radius: 50px; */
+        }
+        h2{
+            background-color: aquamarine;
+        }
+
+        button{
+            color: rgb(230, 223, 223);
+            background-color: palevioletred;
+        }
+        input{
+            background-color: aliceblue;
+        }
+            
+        
+    </style>
+</head>
+<html>
+<body>
+<div>
+<h2>Try-Catch</h2>
+<h2>Enter your name</h2>
+<input type="text" id="userInput" />
+<button onclick="checkInput()">Check Input</button>
+
+<p id="result"></p>
+</div>
+<script>
+function checkInput() {
+  var userInput = document.getElementById("userInput").value;
+  try {
+    if (isNaN(userInput)) {
+      throw new Error("correct! this is your name in words");
+    }
+    document.getElementById("result").innerHTML = "This is a number you name should be in words";
+  } catch (e) {
+    document.getElementById("result").innerHTML = e.message;
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label for="name" id="name">Username :</label>
+            <input type="text" id="name" placeholder="your name" onfocus="key()">
+            <br>
+            <label for="pass" id="pass">Passward : </label>
+            <input type="text" id="pass" placeholder="Passward">
+            <button>submit</button>
+        </form>
+
+    </div>
+
+    <script>
+        function key()
+        {
+            document.getElementById("text").style.backgroundColor="green";
+
+        }
+        function validation(){
+            if(document.getElementById("text").value == ""){
+                alert("text box is empty");
+            }
+        }
+
+        let n = prompt
+    </script>
+
+</body>
+</html>

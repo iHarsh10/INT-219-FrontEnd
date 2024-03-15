@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let h = document.createElement('h1');
+        h.textContent="Welcome Home";
+        h.style.textAlign="center";
+        h.style.backgroundColor= "aqua";
+        document.body.appendChild(h);
+        document.body.style.backgroundColor= "purple";
+
+        //div
+        let maindiv = document.createElement('div');
+        let leftDiv = document.createElement('div');
+        let rightDiv = document.createElement('div');
+
+        let img = document.createElement('img');
+        img.src= "download.jpeg";
+        img.style.width="100%";
+        img.style.height="100%";
+        leftDiv.appendChild(img);
+        
+
+        let para = document.createElement('p');
+        para.style.color="white";
+        
+        para.innerText = "lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo nesciunt inventore reiciendis! Optio velit necessitatibus aut dolorum harum, debitis, possimus beatae illo totam quasi distinctio itaque nostrum accusamus quas praesentium minima omnis. Quo corrupti ducimus repudiandae fugiat odit mollitia impedit iusto saepe dicta, quia asperiores earum excepturi culpa atque facilis, veniam officia reprehenderit et quis provident ut laborum? Modi, nulla iusto! Nisi totam rem illum, sit ad consequuntur sapiente qui. Adipisci autem earum consequuntur nemo porro corporis? Rerum cupiditate, vitae, blanditiis culpa perspiciatis hic aliquam quae nobis dolorem, accusantium nesciunt voluptatum neque id recusandae ad vel non maiores ut."
+        rightDiv.appendChild(para);
+
+        maindiv.appendChild(leftDiv);
+        maindiv.appendChild(rightDiv);
+
+        maindiv.style.display= "flex";
+        leftDiv.style.width= "50%";
+        rightDiv.style.width= "50%";
+
+        document.body.appendChild(maindiv);
+
+        let footer = document.createElement('div');
+        let h3 = document.createElement('h3');
+        h3.innerHTML= "Name: Avi <br> Reg: 1332343";
+        h3.style.textAlign= "center"
+        h3.style.textAlign= "justify-content"
+        footer.style.backgroundColor = "orange"
+        footer.appendChild(h3);
+
+        document.body.appendChild(footer);
+    </script>
+</body>
+</html>

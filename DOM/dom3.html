@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+        var div = document.createElement('div');
+        div.style.background="black";
+        div.style.width="100px";
+        div.style.height="100px";
+        document.body.appendChild(div);
+        div.addEventListener("mouseleave", abc);
+        div.addEventListener("click", xyz);
+        function abc() {
+            div.style.backgroundColor= "black";
+
+        }
+        function xyz(){
+            div.removeEventListner("mouseleave",abc)
+        }
+        
+    </script>
+</body>
+</html>
